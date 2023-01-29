@@ -29,6 +29,9 @@ module.exports = {
         sand11: "#706f6c",
         sand12: "#1b1b18",
       },
+      screens: {
+        headerBreak: { raw: "(max-width: 710px)" },
+      },
     },
   },
   plugins: [],
