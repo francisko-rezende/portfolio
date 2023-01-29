@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -31,6 +32,10 @@ module.exports = {
       },
       screens: {
         headerBreak: { raw: "(max-width: 710px)" },
+      },
+      fontFamily: {
+        sans: ["Arimo", ...defaultTheme.fontFamily.sans],
+        mono: ["Fira Code", ...defaultTheme.fontFamily.mono],
       },
     },
   },
