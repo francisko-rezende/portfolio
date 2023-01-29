@@ -1,14 +1,14 @@
 ---
 interface Props {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
-const { href, label } = Astro.props;
+const { href, label } = Astro.props
 ---
 
 <li>
-  <a href={href} class="hover:text-amber11 transition-colors capitalize text-lg"
+  <a href={href} class="text-lg capitalize transition-colors hover:text-amber11"
     >{label}</a
   >
 </li>
