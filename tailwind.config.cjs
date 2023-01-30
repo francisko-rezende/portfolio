@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -31,13 +32,18 @@ module.exports = {
         sand12: "#1b1b18",
       },
       screens: {
+        xs1: "365px",
+        xs2: "475px",
         headerBreak: { raw: "(max-width: 710px)" },
       },
       fontFamily: {
         sans: ["Arimo", ...defaultTheme.fontFamily.sans],
         mono: ["Fira Code", ...defaultTheme.fontFamily.mono],
       },
+      backgroundImage: {
+        decoration: "url('src/images/decoration.svg')",
+      },
     },
   },
   plugins: [],
-};
+}
